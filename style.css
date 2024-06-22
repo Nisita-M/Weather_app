@@ -1,0 +1,142 @@
+ *{
+    margin : 0;
+    padding : 0;
+    font-family: 'Poppins' , sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background: #222;
+}
+.card{
+    width: 100%;
+    /* max-width: 800px; */
+    background: linear-gradient(135deg, #00feba,#5b548a);
+    color: #fff;
+    margin: 5px auto 0;
+    border-radius: 20px;
+    padding:40px 35px;
+    text-align: center;
+}
+    
+.search_box{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+.search_box input{
+    border: 0 ;
+    outline: 0;
+    border-radius: 35px;
+    color: #555;
+    background: #ebfffc;
+    padding: 10px 25px;
+    height: 60px;
+    flex: 1;
+    margin-right: 16px;
+    font-size: 18px;
+}
+.search_box button {
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+.search_box button img{
+    width: 26px;
+}
+.weather_icon{
+    width:200px;
+    margin-top: 80px;
+    margin-bottom: 20px;
+}
+.weather h1{
+    font-size: 90px;
+    font-weight: 500;
+}
+.weather h2{
+    font-size: 35px;
+    font-weight: 400;
+    margin-top: 0px;
+}
+.details{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 20px;
+    margin-top: 20px;
+}
+.details img{
+    width: 80px;
+}
+.humidity, .wind_speed{
+    font-size: 25px;
+    margin-top: -6px;
+}
+.weather{
+    display: none;
+}
+.error{
+    margin: 10px;
+    font-size: 14px;
+    text-align: left;
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .card {
+        max-width: 450px;
+        padding: 30px 20px; 
+    }
+    .search_box input{
+        border: 0 ;
+        outline: 0;
+        border-radius: 35px;
+        color: #555;
+        background: #ebfffc;
+        padding: 10px 15px;
+        height: 45px;
+        flex: 1;
+        margin-right: 10px;
+        font-size: 15px;
+    }
+    .search_box button {
+        border: 0;
+        outline: 0;
+        background: #ebfffc;
+        border-radius: 50%;
+        width: 45px;
+        height: 45px;
+        cursor: pointer;
+        margin-right: 10px;
+    }
+    .search_box button img{
+        width: 25px;
+    }
+    .weather_icon{
+        width: 170px;
+        margin: 100px auto 20px;
+    }
+    .weather h1 {
+        font-size: 4rem; 
+    }
+    .weather h2 {
+        font-size: 2rem; 
+    }
+
+    .details img {
+        width: 15vw; 
+        margin-bottom: 10px; 
+    }
+
+    .humidity, .wind_speed {
+        margin-top: -0.2rem; 
+    }
+}
+
+
+
